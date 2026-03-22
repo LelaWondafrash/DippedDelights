@@ -1,12 +1,9 @@
 
 body {
-  background-color: #fdf6f9;  /*#FFF4E8*/
+  background: linear-gradient(180deg, #fdf6f9, #f7e9ee, #e7cbcb); /*#f7e9ee*/
   font-family: 'Poppins', sans-serif;
-  color: #4a3a33; /*#6B4E3D;*/
-}
-
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+  color: #4a3a33;
+  margin: 0;
 }
 
 main {
@@ -15,76 +12,99 @@ main {
   padding: 20px;
 }
 
+section {
+  margin-bottom: 80px;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
 h1 {
   margin-top: 40px;
 }
 
 p {
-  line-height: 1.7;
+  line-height: 1.8;
   font-size: 16px;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+h1 {
+  margin-top: 40px;
+  text-align: center;
 }
 
 .tagline {
-  text-align: center;
+  text-align: left;
   font-size: 18px;
   margin-top: -10px;
   margin-bottom: 30px;
   color: #8a6a58;
 }
+/*------------------------------------------*/
 
+header {
+  text-align: left;
+  padding: 30px 40px;
+}
+
+.location {
+  font-size: 14px;
+  color: #8a6a58;
+  margin: 5px 0 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4a3a33;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #C97C5D;
+}
+
+/*----------------------------------------*/
+
+/*image of me :)*/
 .about-img {
   width: 300px;
-  border-radius: 400%;
+  border-radius: 50%;
   display: block;
   margin: 20px auto;
+  object-fit: cover;
 }
 
-/*.img-zoom-eighty{
-  transform: scale(0.8);
-}
-*/
+/* -------- CAROUSEL ------- */
 
 .carousel-container {
-    overflow: hidden;     
-    width: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 
 .carousel-track {
-    display: flex;          
-    gap: 20px;             
-    flex-wrap: nowrap;     
+  display: flex;
+  gap: 20px;
+  flex-wrap: nowrap;
 }
 
 .photo-frame img {
-    width: 300px;          
-    height: 220px;          
-    object-fit: cover;      
-    border-radius: 12px;
+  width: 300px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
 }
-/*
-.carousel-container::before,
-.carousel-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 80px;
-    height: 100%;
-    z-index: 2;
-    pointer-events: none;
-}
-
-.carousel-container::before {
-    left: 0;
-    background: linear-gradient(to right, white, transparent);
-}
-
-.carousel-container::after {
-    right: 0;
-    background: linear-gradient(to left, white, transparent);
-}
-    */
-
-/* Bundle Cards*/
+/*------------------ Bundle Cards--------*/
 
 #bundles {
   text-align: center;
@@ -186,4 +206,36 @@ p {
   line-height: 1.6;
 }
 
+#coming_soon {
+  text-align: center;}
 
+section {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+nav2 ul {
+  list-style: none;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+nav2 a {
+  text-decoration: none;
+  color: #4a3a33;
+  font-weight: 500;
+
+}
+
+nav2 a:hover {
+  color: #C97C5D;
+}
+
+
+#policies p, 
+#events p, 
+#closing p {
+  max-width: 700px;
+  margin: 10px auto;
+}
